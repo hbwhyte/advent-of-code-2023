@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static com.github.hbwhyte.UtilityClass.loadInput;
 import static java.lang.Character.isDigit;
 import static java.util.Objects.requireNonNull;
 
@@ -110,14 +111,5 @@ public class Day01_Trebuchet {
             case "nine" -> "9";
             default -> number;
         };
-    }
-
-    private static List<String> loadInput(final String fileName) {
-        try (InputStream input = Day01_Trebuchet.class.getClassLoader().getResourceAsStream(fileName)) {
-            return new BufferedReader(new InputStreamReader(requireNonNull(input))).lines().toList();
-        } catch (IOException exc) {
-            System.out.print("Failed to read file. " + exc);
-            return Collections.emptyList();
-        }
     }
 }
