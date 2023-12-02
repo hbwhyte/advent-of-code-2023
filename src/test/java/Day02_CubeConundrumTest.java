@@ -7,6 +7,11 @@ public class Day02_CubeConundrumTest {
 
     @Test
     void part01() {
-        assertThat(Day02_CubeConundrum.calculate("day02_part1.txt")).isEqualTo(8);
+        assertThat(Day02_CubeConundrum.part1("day02_part1.txt")).isEqualTo(8);
+    }
+
+    @Test
+    void part02() {
+        assertThat(Day02_CubeConundrum.part2("day02_part1.txt")).isEqualTo(2286);
     }
 }
