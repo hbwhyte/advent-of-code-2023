@@ -47,7 +47,7 @@ import static java.util.Objects.requireNonNull;
  * <br>
  * Consider your entire calibration document. What is the sum of all the calibration values?
  */
-public class Day01 {
+public class Day01_Trebuchet {
 
     public static void main(String[] args) {
         System.out.println("Day 01: " + calibrateTrebuchet("day01.txt"));
@@ -56,7 +56,7 @@ public class Day01 {
     public static Integer calibrateTrebuchet(final String fileName) {
         List<String> calibrationLines = loadInput(fileName);
         return calibrationLines.stream()
-                .map(Day01::part2)
+                .map(Day01_Trebuchet::part2)
                 .mapToInt(Integer::intValue)
                 .sum();
     }
@@ -113,7 +113,7 @@ public class Day01 {
     }
 
     private static List<String> loadInput(final String fileName) {
-        try (InputStream input = Day01.class.getClassLoader().getResourceAsStream(fileName)) {
+        try (InputStream input = Day01_Trebuchet.class.getClassLoader().getResourceAsStream(fileName)) {
             return new BufferedReader(new InputStreamReader(requireNonNull(input))).lines().toList();
         } catch (IOException exc) {
             System.out.print("Failed to read file. " + exc);
