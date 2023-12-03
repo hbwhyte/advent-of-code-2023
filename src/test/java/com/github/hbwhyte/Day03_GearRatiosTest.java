@@ -13,7 +13,6 @@ class Day03_GearRatiosTest {
 
     @Test
     void part2() {
-        assertThat(Day03_GearRatios.part1("day03.txt")).isEqualTo(467835);
+        assertThat(Day03_GearRatios.part2("day03.txt")).isEqualTo(467835);
     }
 }
-//560712 is too high
