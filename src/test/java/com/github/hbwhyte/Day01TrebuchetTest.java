@@ -1,3 +1,5 @@
+package com.github.hbwhyte;
+
 import com.github.hbwhyte.Day01_Trebuchet;
 import org.junit.jupiter.api.Test;
 

@@ -1,3 +1,5 @@
+package com.github.hbwhyte;
+
 import com.github.hbwhyte.Day02_CubeConundrum;
 import org.junit.jupiter.api.Test;
 
