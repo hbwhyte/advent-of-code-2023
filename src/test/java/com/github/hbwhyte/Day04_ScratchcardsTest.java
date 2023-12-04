@@ -11,4 +11,9 @@ class Day04_ScratchcardsTest {
     void part1() {
         assertThat(Day04_Scratchcards.part1("day04.txt")).isEqualTo(13);
     }
+
+    @Test
+    void part2() {
+        assertThat(Day04_Scratchcards.part2("day04.txt")).isEqualTo(30);
+    }
 }
